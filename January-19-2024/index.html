@@ -1,6 +1,7 @@
 <html
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:o="urn:schemas-microsoft-com:office:office"
+  style="height: 3950"
 >
   <head>
     <meta charset="UTF-8" />
@@ -11364,5 +11365,32 @@
       }
       // ]]>
     </script>
+
+<style>
+    @media only screen and (max-width: 600px) {
+        .es-content-body, .es-header-body, .es-footer-body {
+            width: 100% !important;
+            max-width: 600px !important;
+        }
+        img.adapt-img {
+            width: 100% !important;
+            height: auto !important;
+        }
+        .esd-block-text, .es-header-body p, .es-content-body p {
+            font-size: 16px !important;
+        }
+        html {
+            height: 3775px !important; /* Adjust the height specifically for mobile */
+            overflow: hidden; /* Hide overflow to remove overhang */
+        }
+        body {
+            transform: scale(0.50); /* Keep your scaling */
+            transform-origin: top left;
+            width: 195%; /* Adjusted width to match the scale */
+            overflow-x: scroll; /* Allow scrolling if necessary */
+        }
+    }
+</style>
+
   </body>
 </html>
